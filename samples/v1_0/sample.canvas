@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "spec",
+      "type": "file",
+      "x": 600,
+      "y": 140,
+      "width": 480,
+      "height": 480,
+      "file": "spec/1.0.md"
+    },
+    {
+      "id": "readme",
+      "type": "file",
+      "x": 36,
+      "y": 240,
+      "width": 480,
+      "height": 580,
+      "file": "readme.md"
+    },
+    {
+      "id": "nav",
+      "type": "text",
+      "x": 336,
+      "y": 36,
+      "width": 182,
+      "height": 176,
+      "text": "Learn more:\n- [Apps](/docs/apps)\n- [Spec](/spec/1.0)\n- [GitHub](https://github.com/obsidianmd/jsoncanvas)"
+    },
+    {
+      "id": "logo",
+      "type": "file",
+      "x": 36,
+      "y": 48,
+      "width": 176,
+      "height": 68,
+      "file": "logo.svg"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-readme-spec",
+      "fromNode": "readme",
+      "fromSide": "right",
+      "fromEnd": "none",
+      "toNode": "spec",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge-logo-nav",
+      "fromNode": "logo",
+      "fromSide": "right",
+      "fromEnd": "none",
+      "toNode": "nav",
+      "toSide": "left",
+      "toEnd": "arrow"
+    }
+  ]
+}
